@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap");
+
+header {
+  border-style: solid;
+  background-color: #3c5aa6;
+  border-color: #003a70;
+}
+
+.logo {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  display: block;
+  margin-right: 1.5rem;
+  align-items: center;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto";
+  color: #ffcb05;
+}
+
+@media (min-width: 730px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  nav li {
+    font-size: 2rem;
+  }
+}
