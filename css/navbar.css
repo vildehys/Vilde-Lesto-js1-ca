@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 header {
+  display: flex;
+  justify-content: space-between;
   border-style: solid;
-  background-color: #3c5aa6;
-  border-color: #003a70;
+  border-width: 0.4rem;
+  border-color: #3c5aa6;
 }
 
 .logo {
-  margin-left: 1.5rem;
-  font-size: 1rem;
+  margin-left: 1rem;
+  height: 5rem;
 }
 
 nav {
@@ -19,24 +22,25 @@ nav {
 
 nav li {
   display: block;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   align-items: center;
-  font-size: 1rem;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
-  font-family: "Roboto";
+  font-family: "Bangers", cursive;
   color: #ffcb05;
+  padding: 0.5rem;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 730px) {
   .logo {
-    font-size: 2rem;
+    margin-left: 2rem;
+    height: 10rem;
   }
-
-  nav li {
-    font-size: 2rem;
+  nav a {
+    font-size: 3rem;
+    margin-right: 2rem;
   }
 }

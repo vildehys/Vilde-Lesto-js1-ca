@@ -22,10 +22,11 @@ async function pokemonCards() {
                                 <div class="cardInfo">
                                 <h1 class="name">${arrayInfo[i].name}</h1>
                                 <p class="type">Type: ${arrayInfo[i].types}</p>
-                                <button class="button">Read More</div>
+                                <button class="button" src="details.htmlid=${arrayInfo[i].id}">Read More</div>
                                 </div>
                                 </a>
                                 `
+                                
                        
            
         
@@ -37,3 +38,5 @@ async function pokemonCards() {
 }
 
   pokemonCards();
+
+ 
