@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-const url = "https://api.pokemontcg.io/v1/cards";
+const url = "https://api.pokemontcg.io/v1/cards/";
 
 async function pokemonCards() {
     try {
@@ -22,11 +22,9 @@ async function pokemonCards() {
                                 <div class="cardInfo">
                                 <h1 class="name">${arrayInfo[i].name}</h1>
                                 <p class="type">Type: ${arrayInfo[i].types}</p>
-                                <button class="button" src="details.htmlid=${arrayInfo[i].id}">Read More</div>
+                                <button class="button" href="details.htmlid=${arrayInfo[i].id}">Read More</div>
                                 </div>
-                                </a>
-                                `
-                                
+                                </a>`
                        
            
         
