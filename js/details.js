@@ -9,12 +9,12 @@ async function fetchCards() {
 
     const response = await fetch(url + id);
 
-    const pokemon = await response.json();
+    const specifics = await response.json();
     
 
-    console.log(pokemon);
+    console.log(specifics);
 
-    createHtml(pokemon);
+    createHtml(specifics);
 
 }
 catch(error) {
@@ -25,12 +25,19 @@ catch(error) {
 
 fetchCards()
 
-function createHtml(pokemon) {
-    containerCards.innerHTML = `<h1 class="pokemon-title">${pokemon.name}</h1>
-                            <img class="pokemon-image" src="${pokemon.imageURL}"</div>
-                            <h2 class="pokemon-artist">${pokemon.artist}</h2>
-                            <p class="card-para">Set: ${pokemon.set}</p>`;
+function createHtml(specifics) {
+    containerCards.innerHTML = `<div class="cardContent">
+                                <div><img class="image" src="${specifics.card.imageUrl}"</div>
+                                <div class="cardInfo">
+                                <h1 class="title">${specifics.card.name}</h1>
+                                <h2 class="artist">${specifics.card.artist}</h2>
+                                <p class="set">${specifics.card.set}</p>
+                                <p class="subtype">${specifics.card.subtype}</p>
+                                <p class="series">${specifics.card.series}</p>
+                                </div>
+                                </div>`;
 
+    
 }
 
        

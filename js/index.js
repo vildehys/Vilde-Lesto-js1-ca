@@ -1,15 +1,23 @@
 const container = document.querySelector(".container");
+const pageLoader = document.querySelector(".loading");
 const url = "https://api.pokemontcg.io/v1/cards/";
 
+setTimeout(function() {
+
+}, 3000);
+
 async function pokemonCards() {
+
+ 
+
     try {
 
     const response = await fetch(url);
-
     const json = await response.json();
-
     const arrayInfo = json.cards;
     //console.log(json.cards)
+
+    
 
 
     container.innerHTML = "";
@@ -20,8 +28,8 @@ async function pokemonCards() {
         container.innerHTML += `<a class="card" href="details.html?id=${arrayInfo[i].id}">
                                 <img class="cardImage" src="${arrayInfo[i].imageUrl}">
                                 <div class="cardInfo">
-                                <h1 class="name">${arrayInfo[i].name}</h1>
-                                <p class="type">Type: ${arrayInfo[i].types}</p>
+                                <h1 class="title">${arrayInfo[i].name}</h1>
+                                <p class="type">${arrayInfo[i].types}</p>
                                 <button class="button" href="details.htmlid=${arrayInfo[i].id}">Read More</div>
                                 </div>
                                 </a>`
@@ -31,7 +39,7 @@ async function pokemonCards() {
        
     }
     } catch (error) {
-        container.innerHTML = displayError ("An error ocurred while calling the API")
+        container.innerHTML = errorMessage ("An error ocurred while calling the API")
     }
 }
 

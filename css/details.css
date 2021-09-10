@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+.container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+  grid-template-rows: repeat;
+  grid-gap: 1rem;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.cardInfo {
+  background-color: #3c5aa6;
+  padding: 2rem;
+  color: white;
+}
+
+.title {
+  font-family: "Bangers";
+  font-size: 2rem;
+  color: #ffcb05;
+}
+
+.artist {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+}
+
+.set {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.subtype {
+  font-family: "roboto";
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.series {
+  font-family: "roboto";
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 850px) {
+  .img {
+    float: left;
+  }
+  .cardInfo {
+    float: left;
+    width: 400px;
+    padding: 0.1rem;
+    margin-right: 3rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .artist {
+    font-size: 2rem;
+  }
+  .set {
+    font-size: 1.3rem;
+  }
+  .subtype {
+    font-size: 1.7rem;
+  }
+  .series {
+    font-size: 1.3rem;
+  }
+}
