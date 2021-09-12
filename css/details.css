@@ -46,6 +46,25 @@
   font-size: 0.7rem;
 }
 
+.loading-indicator {
+  border: 16px solid #d3d3d3;
+  border-top: 16px solid #ffcb05;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 850px) {
   .img {
     float: left;

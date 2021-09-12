@@ -3,10 +3,10 @@
 
 .container {
   display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
-  grid-template-rows: repeat;
   grid-gap: 5rem;
+  grid-template-rows: repeat;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+  justify-items: center;
   margin-top: 7rem;
 }
 
@@ -39,17 +39,21 @@
   font-size: 1.3rem;
 }
 
-/*.loading {
-  border: 16px solid red;
-  border-top: 16px solid red;
-  border-radius 50%;
+.loading-indicator {
+  border: 16px solid #d3d3d3;
+  border-top: 16px solid #ffcb05;
+  border-radius: 50%;
   width: 120px;
   height: 120px;
+  margin-left: 50%;
   animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-  0%{transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
-
-} */
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

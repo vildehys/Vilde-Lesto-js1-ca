@@ -4,6 +4,13 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = "https://api.pokemontcg.io/v1/cards/";
 
+setTimeout(function() {
+    loading.classList.remove("loading-indicator")
+}, 3000);
+
+
+
+
 async function fetchCards() {
     try {
 

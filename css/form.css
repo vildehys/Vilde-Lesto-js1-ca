@@ -1,8 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap");
 
 .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
   margin-top: 5rem;
+  text-align: center;
+  font-family: "Bangers";
+  font-size: 1rem;
+  color: #ffcb05;
+}
+
+.formContent {
+  border-style: solid;
+  background-color: #3c5aa6;
+  border-color: #3c5aa6;
+  padding: 3rem;
+}
+
+input {
+  width: 12rem;
+  border-style: solid;
+  border-color: #3c5aa6;
+  background-color: white;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  text-align: center;
+  height: 2rem;
+}
+
+button {
+  color: #3c5aa6;
+  background-color: #ffcb05;
+  border-color: #ffcb05;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 8rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.signUpError {
+  display: none;
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 850px) {
+  input {
+    width: 40rem;
+    height: 3rem;
+  }
+
+  .container {
+    margin-top: 7rem;
+    font-size: 1.3rem;
+  }
+
+  .signUpError {
+    color: red;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 12rem;
+    font-size: 1.3rem;
+  }
 }
