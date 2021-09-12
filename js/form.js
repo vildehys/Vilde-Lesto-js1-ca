@@ -1,3 +1,5 @@
+//NOROFF,9-9/21,"SIMPLE FORM VALIDATION", JAVASCRIPT, NOROFF
+
 const signUpForm = document.querySelector("#signUpForm");
 const name = document.querySelector("#name");
 const errorName = document.querySelector("#errorName");
@@ -9,9 +11,7 @@ const address = document.querySelector("#address");
 const errorAddress = document.querySelector("#errorAddress");
 const submitForm = document.querySelector("submit-form")
 
-setTimeout(function() {
-    loading.classList.remove("loading-indicator")
-}, 3000);
+
 
 function signUpFormValidation() {
     event.preventDefault()
