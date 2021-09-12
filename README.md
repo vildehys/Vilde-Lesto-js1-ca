@@ -1,1 +1,5 @@
 # Vilde-Lesto-js1-ca
+
+References
+
+NOROFF,9-9/21,"SIMPLE FORM VALIDATION", JAVASCRIPT, NOROFF

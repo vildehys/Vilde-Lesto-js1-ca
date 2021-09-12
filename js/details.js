@@ -13,6 +13,7 @@ setTimeout(function() {
 
 async function fetchCards() {
     try {
+        
 
     const response = await fetch(url + id);
 

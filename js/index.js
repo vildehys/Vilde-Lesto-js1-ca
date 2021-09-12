@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 const pageLoader = document.querySelector(".loading");
 const url = "https://api.pokemontcg.io/v1/cards/";
-const loading = document.querySelector(".loader")
+const loading = document.querySelector(".loader");
 
 
 

@@ -50,8 +50,8 @@
   border: 16px solid #d3d3d3;
   border-top: 16px solid #ffcb05;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin-left: 50%;
   animation: spin 2s linear infinite;
 }
@@ -89,5 +89,11 @@
   }
   .series {
     font-size: 1.3rem;
+  }
+
+  .loading-indicator {
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
   }
 }

@@ -76,4 +76,4 @@ function checkLength(value, len) {
 
 // setTimeout(submitForm, 2500);
 
-signUpForm.addEventListener("submit", signUpFormValidation)
+signUpForm.addEventListener("submit", signUpFormValidation);
